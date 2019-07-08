@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
-import { Friend } from './friends';
+import { Boba } from './boba';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,19 +9,19 @@ import { Friend } from './friends';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-  friends: Friend[]
+  boba: Boba[]
   constructor() {
-    this.friends = [
-      { name: "Derek", status: "Teaching children to read", about: "I'm a model", messages: [], rows: 1, cols:1},
-      { name: "Hansel", status: "Kitesurfing", about: "I'm a model", messages: [], rows: 1, cols:1 },
-      { name: "Valentina", status: "Kitesurfing", about: "I'm a model", messages: [], rows: 1 , cols:1},
-      { name: "Mugatu", status: "Designing the masterplan", about: "I'm a tirant", messages: [], rows: 3, cols:1},
-      { name: "Katinka", status: "Teaching children to read", about: "I'm a model", messages: [], rows: 1, cols:1},
-      { name: "Rufus", status: "Kitesurfing", about: "I'm a model", messages: [], rows: 1 , cols:1},
-      { name: "Brint", status: "Teaching children to read", about: "I'm a model", messages: [], rows: 1, cols:1},
-      { name: "Meekus", status: "Teaching children to read", about: "I'm a model", messages: [], rows: 1, cols:1},
-      { name: "EvilDJ", status: "Teaching children to read", about: "I'm a model", messages: [], rows: 1, cols:1},
-      { name: "JPPrewit", status: "Teaching children to read", about: "I'm a model", messages: [], rows: 1, cols:1},
+    this.boba = [
+      { shop: "Class 302", rows: 1, cols:1},
+      { shop: "Cha for Tea", rows: 1, cols:1 },
+      { shop: "Gong Cha", rows: 1 , cols:1},
+      { shop: "It's Boba Time", rows: 3, cols:1},
+      { shop: "KungFu Tea", rows: 1, cols:1},
+      { shop: "Lollicup", rows: 1 , cols:1},
+      { shop: "Milkbox", rows: 1, cols:1},
+      { shop: "Omomo Tea Shoppe", rows: 1, cols:1},
+      { shop: "ShareTea", rows: 1, cols:1},
+      { shop: "Snow Monster", rows: 1, cols:1},
     ];
   }
 }
