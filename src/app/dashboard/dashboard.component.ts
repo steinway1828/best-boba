@@ -9,9 +9,9 @@ import { Boba } from './boba';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-  boba: Boba[]
+  bobas: Boba[]
   constructor() {
-    this.boba = [
+    this.bobas = [
       { shop: "Class 302", rows: 1, cols:1},
       { shop: "Cha for Tea", rows: 1, cols:1 },
       { shop: "Gong Cha", rows: 1 , cols:1},
